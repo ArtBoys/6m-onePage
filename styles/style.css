@@ -26,30 +26,51 @@ a {
   color: white;
   border-radius: 30px;
 }
+.btn-primary:hover {
+  background: #21d997;
+  color: white;
+  cursor: pointer;
+}
 
 .btn-secondary {
-  background: white;
-  color: #000000;
+  display: inline-block;
+  background: #21d997;
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+.btn-secondary:hover {
+  background: #000000;
+  color: white;
+  cursor: pointer;
 }
 
 .-mb {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .-mb1 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .-mb2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 2.3rem;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1.3;
 }
 
 /* Styles */
+/*
+ | ---------------------------------------------
+ | ---------------------------------------------
+ | - header
+ | ---------------------------------------------
+ | ---------------------------------------------
+*/
 header {
   display: flex;
   justify-content: space-between;
@@ -80,14 +101,21 @@ header {
   display: flex;
 }
 
+/*
+ | ---------------------------------------------
+ | ---------------------------------------------
+ | - rotator
+ | ---------------------------------------------
+ | ---------------------------------------------
+*/
 .rotator {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.4));
   width: 100%;
-  height: auto;
+  height: 90vh;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.4));
 }
 
 .rotatorVideo {
@@ -122,15 +150,31 @@ header {
   color: #21d997;
 }
 
+/*
+ | ---------------------------------------------
+ | ---------------------------------------------
+ | - aboutUs
+ | ---------------------------------------------
+ | ---------------------------------------------
+*/
 .aboutUs__wrapper {
   display: flex;
-  padding: 3rem 12rem;
+  padding: 3.7rem 8rem;
 }
-.aboutUs__wrapper:nth-child(1) {
+.aboutUs__wrapper:nth-child(odd) {
   background: #f6f6f6;
 }
-.aboutUs__wrapper:nth-child(2) {
+.aboutUs__wrapper:nth-child(even) {
   flex-direction: row-reverse;
+}
+.aboutUs__wrapper:nth-child(even) .aboutUs__image {
+  justify-content: start;
+}
+.aboutUs__wrapper:nth-child(3) {
+  padding: 0 0 0 8rem;
+}
+.aboutUs__wrapper:nth-child(4) {
+  padding: 0 8rem 0 0;
 }
 .aboutUs__text {
   display: flex;
@@ -146,8 +190,141 @@ header {
   justify-content: end;
   flex: 1 40%;
 }
-.aboutUs__image:nth-child(2) {
-  justify-content: start;
+
+/*
+ | ---------------------------------------------
+ | ---------------------------------------------
+ | - contactForm
+ | ---------------------------------------------
+ | ---------------------------------------------
+*/
+.contactForm {
+  margin: 4rem;
+}
+.contactForm__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/bgc-contactForm.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 45rem;
+  padding: 7rem;
+}
+.contactForm__title {
+  text-align: center;
+}
+.contactForm .btn-secondary {
+  padding: 13px 80px;
+  font-size: 14px;
+}
+.contactForm input {
+  min-width: 750px;
+  padding: 15px 20px;
+  border-radius: 14px;
+  border: 1px solid #21d997;
+  margin-bottom: 0.6rem;
+}
+.contactForm label {
+  position: relative;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 13px;
+  background: #E2EBEB;
+  border-radius: 8px;
+  padding: 0.1rem 0.3rem;
+}
+.contactForm button {
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+ | ---------------------------------------------
+ | ---------------------------------------------
+ | - footer
+ | ---------------------------------------------
+ | ---------------------------------------------
+*/
+.footer {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  background: #000000;
+  color: white;
+  padding: 5rem 7rem;
+}
+.footer__title {
+  flex: 1 30%;
+  display: flex;
+  justify-content: center;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 70%;
+}
+.footer__menuColum {
+  font-size: 16px;
+}
+.footer__menuColum:nth-child(3) a {
+  color: #21d997;
+}
+.footer__menuColum p {
+  margin-bottom: 1.3rem;
+}
+.footer__menuColum ul {
+  list-style: none;
+}
+.footer__menuColum ul li {
+  font-size: 15px;
+  opacity: 0.8;
+}
+.footer__menuColum ul a {
+  color: white;
+}
+
+/*
+ | ---------------------------------------------
+ | ---------------------------------------------
+ | - countTimer
+ | ---------------------------------------------
+ | ---------------------------------------------
+*/
+.countTimer {
+  background: #21d997;
+  padding: 2.5rem 0;
+}
+.countTimer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.countTimer__title p {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+.countTimer__counter {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  color: white;
+}
+.countTimer__items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.countTimer__itemData {
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.countTimer .btn-primary {
+  background: white;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
