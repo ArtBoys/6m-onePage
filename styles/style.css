@@ -327,4 +327,13 @@ header {
   color: #000000;
 }
 
+.countTimer__itemData .countTimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -34,14 +34,17 @@
                     <img src="assets/hamburger.svg" alt="menu-hamburger">
                 </span>
                 </a>
-                <!--            <div class="menuHamburger__wrapper">-->
-                <!--                <button class="menuHamburger__closeBtn" type="button" aria-label="buttonCLose" title="button"></button>-->
-                <!--                <ul class="menuHamburger__nav">-->
-                <!--                    <li>Home page</li>-->
-                <!--                    <li>About us</li>-->
-                <!--                    <li>Contact</li>-->
-                <!--                </ul>-->
-                <!--            </div>-->
+
+                <div class="menuHamburger__wrapper">
+                    <button class="menuHamburger__closeBtn" type="button" aria-label="buttonCLose" title="button"></button>
+                    <ul class="menuHamburger__nav">
+                        <li>Home page</li>
+                        <li>About us</li>
+                        <li>Gallery</li>
+                        <li>Company</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -73,9 +76,9 @@
                 <p>Hurry up!</p>
             </div>
             <div class="countTimer__counter">
-                <div class="countTimer__items">
+                <div class="countTimer__items" id="countdown">
                     <div class="countTimer__itemData">
-                        <h2 class="countTimer__day"></h2>
+                        <h2 class="countTimer countTimer__day" id="days"></h2>
                     </div>
                     <div class="countTimer__itemText">
                         <h2>days</h2>
@@ -83,7 +86,7 @@
                 </div>
                 <div class="countTimer__items">
                     <div class="countTimer__itemData">
-                        <h2 class="countTimer__hour"></h2>
+                        <h2 class="countTimer countTimer__hour" id="hours"></h2>
                     </div>
                     <div class="countTimer__itemText">
                         <h2>hours</h2>
@@ -91,7 +94,7 @@
                 </div>
                 <div class="countTimer__items">
                     <div class="countTimer__itemData">
-                        <h2 class="countTimer__minute"></h2>
+                        <h2 class="countTimer countTimer__minute" id="minutes"></h2>
                     </div>
                     <div class="countTimer__itemText">
                         <h2>minutes</h2>
@@ -99,7 +102,7 @@
                 </div>
                 <div class="countTimer__items">
                     <div class="countTimer__itemData">
-                        <h2 class="countTimer__second"></h2>
+                        <h2 class="countTimer countTimer__second" id="seconds"></h2>
                     </div>
                     <div class="countTimer__itemText">
                         <h2>seconds</h2>
@@ -239,40 +242,40 @@
     </section>
 
 
-        <footer class="footer">
-            <div class="footer__title">
-                <h2>Build for Retail.</h2>
-            </div>
-            <div class="footer__menu">
+    <footer class="footer">
+        <div class="footer__title">
+            <h2>Build for Retail.</h2>
+        </div>
+        <div class="footer__menu">
 
-                    <div class="footer__menuColum">
-                        <p>Explore</p>
-                        <ul>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__menuColum">
-                        <p>Shiftlab Solucutions</p>
-                        <ul>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Wireless Retail</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__menuColum">
-                        <p>Contact us</p>
-                        <ul>
-                            <li>
-                                <a href="mailto:support@contact.io" title="mail">support@contact.io -></a>
-                            </li>
-                        </ul>
-                    </div>
-
+            <div class="footer__menuColum">
+                <p>Explore</p>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="footer__menuColum">
+                <p>Shiftlab Solucutions</p>
+                <ul>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Wireless Retail</a></li>
+                </ul>
+            </div>
+            <div class="footer__menuColum">
+                <p>Contact us</p>
+                <ul>
+                    <li>
+                        <a href="mailto:support@contact.io" title="mail">support@contact.io -></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
 
 </div>
 
