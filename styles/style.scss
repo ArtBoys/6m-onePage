@@ -108,6 +108,9 @@ h2 {
   @media(max-width: $mdBreakpoint) {
     font-size: 1.1rem;
   }
+  @media(max-width: 400px) {
+    font-size: 1rem;
+  }
 }
 
 
@@ -249,7 +252,7 @@ header {
     height: 100%;
   }
   @media(max-width: $mdBreakpoint) {
-
+    overflow: hidden;
   }
 
 }
@@ -269,6 +272,9 @@ header {
 
 .rotatorText {
   position: absolute;
+  @media(max-width: $smBreakpoint) {
+    padding: 0 2rem;
+  }
   &__title {
     font-size: 5rem;
     font-weight: 500;
@@ -288,20 +294,16 @@ header {
     font-weight: 500;
     text-align: center;
     @media(max-width: $lgBreakpoint) {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
-    @media(max-width: $lgBreakpoint) {
-      font-size: 0.8rem;
-    }
+
   }
   &__button {
     display: flex;
     justify-content: center;
     a {
       font-size: 14px;
-      @media(max-width: $lgBreakpoint) {
-        font-size: 12px;
-      }
+
 
     }
   }
@@ -319,45 +321,133 @@ header {
 */
 
 .aboutUs {
+  overflow: hidden;
   &__wrapper {
     display: flex;
+    justify-content: space-between;
     padding: 3.7rem 8rem;
-    &:nth-child(odd) {
-      background: $lightgrey;
+    @media(max-width: $lgBreakpoint) {
+      padding: 3.7rem 4rem;
     }
     &:nth-child(even) {
       flex-direction: row-reverse;
+      @media(max-width: $mdBreakpoint) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+      }
+
       .aboutUs__image {
         justify-content: start;
-        padding-left: 0;
-        padding-right: 4rem;
+        @media(max-width: 1350px) {
+          max-width: 100%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .aboutUs__text {
+        padding-left: 2rem;
+        @media(max-width: $mdBreakpoint) {
+          padding-left: 0;
+          text-align: center;
+        }
+        @media(max-width: 450px) {
+          padding: 0 2rem;
+        }
+      }
+
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row;
+      background: $lightgrey;
+      @media(max-width: $mdBreakpoint) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      .aboutUs__image {
+        justify-content: end;
+        @media(max-width: 1350px) {
+          max-width: 100%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .aboutUs__text {
+        padding-right: 2rem;
+        @media(max-width: $mdBreakpoint) {
+          padding-right: 0;
+          text-align: center;
+        }
+        @media(max-width: 450px) {
+          padding: 0 2rem;
+        }
       }
     }
+
     &:nth-child(3) {
       padding: 0 0 0 8rem;
+      @media(max-width: $lgBreakpoint) {
+
+        flex-direction: column-reverse;
+        position: relative;
+        padding: 0;
+        .aboutUs__text {
+          position: absolute;
+          top: calc(50% - 72px);
+          left: calc(50% - 250px);
+          padding: 0;
+          max-width: 500px;
+          @media(max-width: $smBreakpoint) {
+            max-width: 300px;
+            min-width: 300px;
+            left: calc(50% - 150px);
+          }
+        }
+      }
+
     }
     &:nth-child(4) {
       padding: 0 8rem 0 0;
+      @media(max-width: $lgBreakpoint) {
+        flex-direction: column-reverse;
+        position: relative;
+        padding: 0;
+        .aboutUs__text {
+          position: absolute;
+          top: calc(50% - 97px);
+          left: calc(50% - 248px);
+          padding: 0;
+          max-width: 500px;
+          @media(max-width: $smBreakpoint) {
+            max-width: 300px;
+            min-width: 300px;
+            left: calc(50% - 150px);
+          }
+        }
+      }
+
     }
   }
+
   &__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 60%;
-    &:nth-child(1) {
-      max-width: 650px;
-    }
+    max-width: 650px;
+    min-width: 400px;
+    flex: 1 100%;
   }
   &__image {
     display: flex;
-    justify-content: end;
-    flex: 1 40%;
-    max-width: 100%;
-    @media(max-width: $xlBreakpoint) {
-      padding-left: 4rem;
-    }
+    flex: 1 100%;
+
   }
+
 }
 
 /*
@@ -482,6 +572,9 @@ header {
     &:nth-child(3) {
       a {
         color: $lightgreen;
+        &:hover {
+          color: $white;
+        }
       }
     }
 
@@ -499,6 +592,9 @@ header {
       }
       a {
         color: $white;
+        &:hover {
+          color: $lightgreen;
+        }
       }
     }
   }
@@ -578,6 +674,10 @@ header {
   .btn-primary {
     background: $white;
     color: $black;
+    &:hover {
+      background: $black;
+      color: $white;
+    }
   }
 }
 
