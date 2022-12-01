@@ -201,9 +201,13 @@ header {
 }
 .menuHamburger__menuButton {
   height: 24px;
+}
+.menuHamburger__menuButton button {
+  background: transparent;
+  border: none;
   transition: ease-in-out 0.3s;
 }
-.menuHamburger__menuButton:hover {
+.menuHamburger__menuButton button:hover {
   scale: 1.15;
   cursor: pointer;
 }
@@ -214,6 +218,8 @@ header {
   transition: 0.2s;
   width: 32px;
   height: 32px;
+  background: transparent;
+  border: none;
 }
 .menuHamburger__closeIcon:hover {
   transform: rotate(90deg);

@@ -204,11 +204,16 @@ header {
   }
   &__menuButton {
     height: 24px;
-    transition: ease-in-out .3s;
-    &:hover {
-      scale: 1.15;
-      cursor: pointer;
+    button {
+      background: transparent;
+      border: none;
+      transition: ease-in-out .3s;
+      &:hover {
+        scale: 1.15;
+        cursor: pointer;
+      }
     }
+
   }
   &__closeIcon {
     position: absolute;
@@ -217,10 +222,13 @@ header {
     transition: .2s;
     width: 32px;
     height: 32px;
+    background: transparent;
+    border: none;
     &:hover {
       transform: rotate(90deg);
       cursor: pointer;
     }
+
   }
 
   .showMenu {
