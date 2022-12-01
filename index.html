@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
-    <script defer src="app/java.js"></script>
+    <script defer src="app/app.js"></script>
 </head>
 <body>
 
@@ -29,22 +29,24 @@
                 <div class="menuHamburger__text">
                     <p>free trial</p>
                 </div>
-                <a href="#" class="menuHamburger__button" aria-label="menu" title="button">
-                <span class="menuHamburger__buttonItem">
-                    <img src="assets/hamburger.svg" alt="menu-hamburger">
-                </span>
-                </a>
+                <div class="menuHamburger__menuButton">
+                    <a class="menuHamburger__menuIcon" type="button" aria-label="buttonMenu" title="button">
+                        <img src="assets/hamburger.svg" alt="menu-button">
+                    </a>
+                </div>
 
-<!--                <div class="menuHamburger__wrapper">-->
-<!--                    <button class="menuHamburger__closeBtn" type="button" aria-label="buttonCLose" title="button"></button>-->
-<!--                    <ul class="menuHamburger__nav">-->
-<!--                        <li>Home page</li>-->
-<!--                        <li>About us</li>-->
-<!--                        <li>Gallery</li>-->
-<!--                        <li>Company</li>-->
-<!--                        <li>Contact</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+                <div class="menuHamburger__wrapper">
+                    <a class="menuHamburger__closeIcon" type="button" aria-label="buttonCLose" title="button">
+                        <img src="assets/nav-close.svg" alt="close-menu">
+                    </a>
+                    <ul class="menuHamburger__nav">
+                        <li><a class="menuItem" href="#">Home page</a></li>
+                        <li><a class="menuItem" href="#">About us</a></li>
+                        <li><a class="menuItem" href="#">Gallery</a></li>
+                        <li><a class="menuItem" href="#">Company</a></li>
+                        <li><a class="menuItem" href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -269,7 +271,7 @@
                 <p>Contact us</p>
                 <ul>
                     <li>
-                        <a href="mailto:support@contact.io" title="mail">support@contact.io -></a>
+                        <a href="mailto:support@contact.io" title="mail">support@contact.io</a>
                     </li>
                 </ul>
             </div>
