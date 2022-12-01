@@ -201,6 +201,11 @@ header {
 }
 .menuHamburger__menuButton {
   height: 24px;
+  transition: ease-in-out 0.3s;
+}
+.menuHamburger__menuButton:hover {
+  scale: 1.15;
+  cursor: pointer;
 }
 .menuHamburger__closeIcon {
   position: absolute;
@@ -212,6 +217,7 @@ header {
 }
 .menuHamburger__closeIcon:hover {
   transform: rotate(90deg);
+  cursor: pointer;
 }
 .menuHamburger .showMenu {
   transform: translateX(0);
@@ -593,6 +599,7 @@ header {
 }
 .footer__menuColum:nth-child(3) a {
   color: #21d997;
+  text-decoration: underline;
 }
 .footer__menuColum:nth-child(3) a:hover {
   color: white;

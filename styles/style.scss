@@ -204,6 +204,11 @@ header {
   }
   &__menuButton {
     height: 24px;
+    transition: ease-in-out .3s;
+    &:hover {
+      scale: 1.15;
+      cursor: pointer;
+    }
   }
   &__closeIcon {
     position: absolute;
@@ -214,6 +219,7 @@ header {
     height: 32px;
     &:hover {
       transform: rotate(90deg);
+      cursor: pointer;
     }
   }
 
@@ -572,6 +578,7 @@ header {
     &:nth-child(3) {
       a {
         color: $lightgreen;
+        text-decoration: underline;
         &:hover {
           color: $white;
         }
