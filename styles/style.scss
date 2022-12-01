@@ -87,6 +87,12 @@ a {
 }
 .-mb1 {
   margin-bottom: 3rem;
+  @media(max-width: $lgBreakpoint) {
+    margin-bottom: 2rem;
+  }
+  @media(max-width: $mdBreakpoint) {
+    margin-bottom: 1rem;
+  }
 }
 .-mb2 {
   margin-bottom: 2rem;
@@ -164,6 +170,9 @@ header {
     color: $black;
     list-style: none;
     padding-top: 4rem;
+    @media(max-width: $smBreakpoint)  {
+      width: 100%;
+    }
 
 
 
@@ -362,6 +371,9 @@ header {
 
 .contactForm {
   margin: 4rem;
+  @media(max-width: $smBreakpoint) {
+    margin: 0;
+  }
 
 
   &__wrapper {
@@ -371,10 +383,14 @@ header {
 
     background-image: url("../assets/bgc-contactForm.svg");
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 45rem;
     padding: 7rem;
+    @media(max-width: $smBreakpoint) {
+      padding: 3rem;
+    }
   }
   &__title {
     text-align: center;
@@ -390,6 +406,13 @@ header {
     border-radius: 14px;
     border: 1px solid $lightgreen;
     margin-bottom: 0.6rem;
+    @media (max-width: $lgBreakpoint) {
+      min-width: 500px;
+    }
+    @media(max-width: $mdBreakpoint) {
+      min-width: 300px;
+    }
+
 
   }
   label {
